@@ -1,0 +1,15 @@
+//#include <dt-bindings/gpio/gpio.h>
+
+/ {
+  zephyr,user {
+      /* Signal from the target device to synhronize */
+      target_trigger_gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>;
+
+      /* Signal controlling the target's power supply */
+      target_power_gpios = <&gpio0 29 GPIO_ACTIVE_HIGH>;
+
+      /* Signal from the target device that glitching succeeded. */
+      target_success_gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
+  };
+
+};
