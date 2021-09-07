@@ -1,4 +1,6 @@
-//#include <dt-bindings/gpio/gpio.h>
+
+// These pin mappings are for an NRF52840 DK board.
+// Change them to whatever is most convenient for your use.
 
 / {
   zephyr,user {
