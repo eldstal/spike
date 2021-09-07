@@ -1,0 +1,2 @@
+#define TIMEOUT_US 300000
+#define RESET_US 300000
