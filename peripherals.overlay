@@ -3,20 +3,16 @@
 // Change them to whatever is most convenient for your use.
 
 / {
-  aliases {
-      /* Counter used for glitch timing and timeout */
-      glitch-timer = &timer0;
-  };
 
   zephyr,user {
       /* Signal from the target device to synhronize */
-      target-trigger-gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>;
+      target-trigger-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
 
       /* Signal controlling the target's power supply */
       target-power-gpios = <&gpio0 29 GPIO_ACTIVE_HIGH>;
 
       /* Signal from the target device that glitching succeeded. */
-      target-success-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
+      target-success-gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>;
   };
 
 };

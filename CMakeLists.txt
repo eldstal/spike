@@ -6,7 +6,7 @@
 # Options
 set(BOARD nrf52840dk_nrf52840)
 #set(CONF_FILE prj.conf)
-set(DTC_OVERLAY_FILE pins.overlay)
+set(DTC_OVERLAY_FILE peripherals.overlay)
 
 
 # Find Zephyr. This also loads Zephyr's build system.
